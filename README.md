@@ -9,6 +9,7 @@ oc new-app \
   https://github.com/leoevasconcelos/DO240-apps.git
   
   
+  -----------------------------------------------------------------------------------------
   Add Service 3scale discovery
   
   oc label svc/books-api \
