@@ -22,6 +22,7 @@ To Discover a service located in a different project than the 3scale project, 3s
 
 $ oc policy add-role-to-user \
   view system:serviceaccount:3SCALE_PROJECT:amp -n PROJECT_NAME
+  
 You can also give 3scale access to all the projects in the cluster by assigning it the view role as a cluster role.
 
 $ oc adm policy add-cluster-role-to-user view \
