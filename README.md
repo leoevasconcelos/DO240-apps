@@ -20,10 +20,8 @@ oc new-app \
   Discovering Services from Other Projects
 To Discover a service located in a different project than the 3scale project, 3scale needs view permissions into the project where that service exists. To give 3scale access to other projects, the 3scale amp service account must have the view role.
 
-$ oc policy add-role-to-user \
-  view system:serviceaccount:3SCALE_PROJECT:amp -n PROJECT_NAME
+$ oc policy add-role-to-user view system:serviceaccount:3SCALE_PROJECT:amp -n PROJECT_NAME
   
 You can also give 3scale access to all the projects in the cluster by assigning it the view role as a cluster role.
 
-$ oc adm policy add-cluster-role-to-user view \
-  system:serviceaccount:3SCALE_PROJECT:amp
+$ oc adm policy add-cluster-role-to-user view system:serviceaccount:3SCALE_PROJECT:amp
