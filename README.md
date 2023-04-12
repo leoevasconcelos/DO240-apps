@@ -3,10 +3,19 @@
 Install API Books
 
 oc new-app \
-  --name=books-api \
-  --context-dir=library/books-api \
-  --build-env NODE_ENV=development \
-  https://github.com/leoevasconcelos/DO240-apps.git
+--name=books-api \
+--context-dir=library/books-api \
+--build-env NODE_ENV=development \
+https://github.com/leoevasconcelos/DO240-apps.git
+  
+-------------------------------------------------------------------------------------------
+Install API Patrons
+  
+oc new-app \
+--name=patrons-api \
+--context-dir=library/patrons-api \
+--build-env NODE_ENV=development \
+https://github.com/leoevasconcelos/DO240-apps.git
   
   
   -----------------------------------------------------------------------------------------
